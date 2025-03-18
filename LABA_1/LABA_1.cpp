@@ -15,7 +15,7 @@ int main() {
    cout << "Input z: ";
    cin >> z;
 
-   // Обчислення a
+   // Обчислення a.
    double numerator = x + 2 * y + 3 * z;
    double denominator = 1 + abs(x - y);
    double term1 = pow(numerator / denominator, 2);
@@ -23,7 +23,7 @@ int main() {
    double term3 = exp(-(x * x + y * y));
    double a = pow(term1 * term2 * term3, 3);
 
-   // Обчислення b
+   // Обчислення b.
    double sinTerm = pow(sin(2 * x - (3.0 / (2 * y + M_PI * z))), 3);
    double fractionDenominator = y * y + (x * x - y * y) / (1 + 2.2 * z * z);
    double b = tan(M_PI / 8) + sinTerm / fractionDenominator;
